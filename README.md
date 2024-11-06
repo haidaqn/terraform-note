@@ -2,13 +2,29 @@
 
 ## Giới thiệu
 
-Terraform là một công cụ mã nguồn mở được sử dụng để xây dựng, thay đổi và phiên bản hóa cơ sở hạ tầng một cách an toàn và hiệu quả. Terraform được phát triển bởi HashiCorp và hỗ trợ nhiều nhà cung cấp dịch vụ đám mây như AWS, Azure, Google Cloud, và nhiều hơn nữa.
+Terraform là gì ???
+    + thông dụng ở thời điểm hiện tại 
+    + open-source của Hashicorp 
+    + chuyên dùng provisioning
+
+## Lợi ích của Terraform so với công cụ khác:
+    + opensource miễn phí
+    + decalrative programing: diễn tả những thứ bạn cần và Terraform làm cho bạn.
+    + Có thể cung cấp hạ tầng cho nhiều cloud khác nhau như AWS, GCP, AZURE
+
 
 ## Tính năng chính
 
-- **Hạ tầng như mã (Infrastructure as Code)**: Terraform cho phép bạn định nghĩa cơ sở hạ tầng của mình bằng mã, giúp dễ dàng quản lý và theo dõi các thay đổi.
+- **Hạ tầng như mã (Infrastructure as Code)**: 
+    + là phươgn pháp quản lý và cung cấp cơ sở hạ tầng thông qua code
+    + thay vì cấu hình CSHT thủ công, laC sử dụng các tệp định nghĩa có thể được máy đọc, ví dụ: JSON, YAML hoặc HCL,...
+    + khi các tệp này được thực thi => tự động tạo ra và cấu hình hạ tầng
+    
+
 - **Nhà cung cấp đa dạng**: Hỗ trợ nhiều nhà cung cấp dịch vụ đám mây và các dịch vụ khác nhau.
+
 - **Quản lý trạng thái**: Terraform lưu trữ trạng thái của cơ sở hạ tầng để theo dõi các thay đổi và đảm bảo tính nhất quán.
+
 - **Kế hoạch trước khi thực hiện**: Terraform cung cấp khả năng xem trước các thay đổi sẽ được thực hiện trước khi áp dụng chúng.
 
 ## Cài đặt
