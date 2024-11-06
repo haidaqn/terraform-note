@@ -1,11 +1,9 @@
 # Terraform
 
-## Giới thiệu
-
-Terraform là gì ???
-    + thông dụng ở thời điểm hiện tại 
-    + open-source của Hashicorp 
-    + chuyên dùng provisioning
+Terraform là gì?
++ Thông dụng ở thời điểm hiện tại
++ Open-source của HashiCorp
++ Chuyên dùng provisioning
 
 ## Lợi ích của Terraform so với công cụ khác:
     + opensource miễn phí
@@ -16,7 +14,7 @@ Terraform là gì ???
 ## Tính năng chính
 
 - **Hạ tầng như mã (Infrastructure as Code)**: 
-    + là phươgn pháp quản lý và cung cấp cơ sở hạ tầng thông qua code
+    + là phương pháp quản lý và cung cấp cơ sở hạ tầng thông qua code
     + thay vì cấu hình CSHT thủ công, laC sử dụng các tệp định nghĩa có thể được máy đọc, ví dụ: JSON, YAML hoặc HCL,...
     + khi các tệp này được thực thi => tự động tạo ra và cấu hình hạ tầng
     
@@ -27,45 +25,7 @@ Terraform là gì ???
 
 - **Kế hoạch trước khi thực hiện**: Terraform cung cấp khả năng xem trước các thay đổi sẽ được thực hiện trước khi áp dụng chúng.
 
-## Cài đặt
-
-Để cài đặt Terraform, bạn có thể làm theo các bước sau:
-
-1. Tải xuống phiên bản Terraform phù hợp với hệ điều hành của bạn từ trang chủ [Terraform](https://www.terraform.io/downloads.html).
-2. Giải nén tệp tin đã tải xuống và thêm đường dẫn đến thư mục chứa tệp thực thi `terraform` vào biến môi trường `PATH`.
-
-## Ví dụ cơ bản
-
-Dưới đây là một ví dụ cơ bản về cách sử dụng Terraform để tạo một phiên bản EC2 trên AWS:
-
-```hcl
-provider "aws" {
-    region = "us-west-2"
-}
-
-resource "aws_instance" "example" {
-    ami           = "ami-0c55b159cbfafe1f0"
-    instance_type = "t2.micro"
-
-    tags = {
-        Name = "example-instance"
-    }
-}
-```
-
-Để áp dụng cấu hình này, bạn có thể chạy các lệnh sau:
-
-```sh
-terraform init
-terraform plan
-terraform apply
-```
-
-## Tài liệu tham khảo
-
-- [Tài liệu chính thức của Terraform](https://www.terraform.io/docs)
-- [Hướng dẫn sử dụng Terraform](https://learn.hashicorp.com/terraform)
-
+![alt text](image.png)
 ## Kết luận
 
 Terraform là một công cụ mạnh mẽ giúp quản lý cơ sở hạ tầng một cách hiệu quả và an toàn. Bằng cách sử dụng Terraform, bạn có thể dễ dàng định nghĩa, triển khai và quản lý cơ sở hạ tầng của mình trên nhiều nhà cung cấp dịch vụ đám mây khác nhau.
